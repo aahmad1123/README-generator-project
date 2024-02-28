@@ -19,6 +19,21 @@ const questions = [
         name: "installation", 
         message:  "Please include any installation instructions for your app."
     }, 
+    {
+        type:"input",
+        name: "usage",
+        message: "Please describe what this app will be used for"
+    },
+    {
+        type:"input",
+        name: "contribution",
+        message: "Who worked on this application?"
+    },
+    {
+        type:"input",
+        name: "test",
+        messsage: "Please include testing instructions."
+    },
     { 
         type:"list", 
         name: "license", 
@@ -39,7 +54,7 @@ const questions = [
 function init() {
     inquirer.prompt(questions).then(data =>{
         console.log(data)
-        fs.writeFileSync("REAME.md", generateMarkdown(data))
+        fs.writeFileSync("READMEtest1.md", generateMarkdown(data))
     })
 }
 
