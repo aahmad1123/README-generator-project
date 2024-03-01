@@ -1,5 +1,5 @@
 # README Generator
-none
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 # Table of Contents
 1. [Description](#description)
@@ -8,15 +8,16 @@ none
 4. [Contribution](#contribution)
 5. [Test](#test)
 6. [License](#license)
+7. [Questions](#questions)
 
 ## Description
-generates READMEs
+Generates professional and organized READMEs
 
 ## Installation
-npm i
+npm 
 
 ## Usage
-personal use
+Personal Use
 
 ## Contribution
 Asaad Ahmad and Robert Kurle Jr.
@@ -25,5 +26,9 @@ Asaad Ahmad and Robert Kurle Jr.
 none
 
 ## License
-none
-none
+apache
+https://opensource.org/licenses/Apache-2.0
+
+## Questions
+https://github.com/aahmad1123 </br>
+For additional questions contact me at ayat.asaad@gmail.com

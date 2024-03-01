@@ -3,6 +3,7 @@ const inquirer = require('inquirer')
 const fs = require('fs')
 const generateMarkdown = require("./utils/generateMarkdown")
 // TODO: Create an array of questions for user input
+// Questions for inquirer
 const questions = [
     { 
         type:"input", 
@@ -32,14 +33,25 @@ const questions = [
     {
         type:"input",
         name: "test",
-        messsage: "Please include testing instructions."
+        message: "Please include testing instructions."
     },
+    // used a list for licenses instead of input
     { 
         type:"list", 
         name: "license", 
         message:  "select a license for your app.",
         choices: ["apache", "MIT", "mozilla", "none"]
     }, 
+    {
+        type: "input",
+        name: "username",
+        message: "Please enter your github username."
+    },
+    {
+        type: "input",
+        name: "email",
+        message: "Please input your email address."
+    },
    // "Why did you build this project?", "What problem does it solve?", "What did you learn?"
 ];
 
@@ -51,6 +63,7 @@ const questions = [
 
 
 // TODO: Create a function to initialize app
+// ignored original format, worked with format used in class
 function init() {
     inquirer.prompt(questions).then(data =>{
         console.log(data)
